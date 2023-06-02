@@ -14,7 +14,7 @@ jobs:
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/toshiro9117/Villain.In.Glasses.RDP/main/resources/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/toshiro9117/Villain.In.Glasses.RDP/main/resources/winrar.exe -OutFile winrar.exe
-        Invoke-WebRequest https://github.com/toshiro9117/Villain.In.Glasses.RDP/main/resources/Villain.zip -OutFile Villain.zip
+        Invoke-WebRequest https://github.com/toshiro9117/Villain.In.Glasses.RDP/raw/main/resources/Villain.zip -OutFile Villain.zip
 
     - name: Extract ngrok Files
       run: Expand-Archive ngrok.zip
